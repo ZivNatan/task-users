@@ -1,0 +1,12 @@
+<div class="task-card">
+
+    <div class="task-header field"><div>
+        <span class="label">Status:</span> <span [ngStyle]="{'color': getStatusColor(task.status)}"> {{task.status}}</span>
+    </div>
+</div>
+    <div class="field task-title text-ellipsis"  [matTooltip]="task.title">{{task.title}}</div>
+    <div class="field task-description multi-line-ellipsis" [matTooltip]="task.description">{{task.description}}</div>
+    <div class="field task-date-field"><span class="label">Created:</span> {{formattedDate(task.created)}}</div>
+    <div class="field task-date-field"><span class="label">Due Date:</span> {{formattedDate(task.dueDate)}}</div>
+    <div class="field task-userName">{{task.userName}}</div>
+</div>

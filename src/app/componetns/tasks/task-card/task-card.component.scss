@@ -1,0 +1,65 @@
+
+.task-card{
+    cursor: default;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 3px;
+
+    .field{
+        margin: 10px 0;
+    }
+
+    .text-ellipsis {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: block;
+        width: 100%; /* Or specify a fixed width */
+      }
+
+      .multi-line-ellipsis {
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* Number of lines to show */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        line-height: 1.5; /* Adjust based on your font size and line height */
+        max-height: 4.5em; /* Adjust based on line height (3 lines x 1.5 line-height) */
+      }
+
+
+    .task-header{
+        width: 100%;
+        padding: 5px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .task-title{
+        font-weight: 700;
+    }
+    .task-description{
+
+    }
+    .task-date-field{
+
+    }
+    .task-date-field{
+
+    }
+    .task-userName{
+        font-weight: 700;
+        text-transform: capitalize;
+
+    }
+    .label{
+        font-weight: 700;
+    }
+
+
+}

@@ -1,0 +1,15 @@
+<h1 mat-dialog-title>Add User</h1>
+<div mat-dialog-content class="add-user">
+  <div>
+    <span class="label">Name</span>
+    <input  [(ngModel)]="user.name">
+  </div>
+  <div>
+    <span class="label">Email</span>
+    <input  [(ngModel)]="user.email">
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button  mat-raised-button color="warn" (click)="onNoClick()">Cancel</button>
+  <button mat-raised-button color="primary" (click)="addUser()">Add </button>
+</div>
